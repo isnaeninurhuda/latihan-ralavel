@@ -12,7 +12,7 @@ class DepartmentController extends Controller
      */
     public function index()
     {
-          return view ('department.index', [
+        return view('department.index', [
             'title' => 'department',
             'departments' => Department::Latest()->get(),
         ]);
@@ -39,7 +39,10 @@ class DepartmentController extends Controller
      */
     public function show(Department $department)
     {
-        //
+        return view('department.show', [
+            'title' => 'Detail department ' . $department->name,
+            'department' => $department,
+        ]);
     }
 
     /**

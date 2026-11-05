@@ -26,7 +26,11 @@
 
                     <th scope="row">{{ $loop->iteration }}</th>
                     <td>{{ $department->name }}</td>
-                    <td><a class="btn btn-warning" href="{{ route('department.edit', $department) }}"
+                    <td>
+                        <a class="btn btn-info" href="{{ route('department.show', $department) }}"
+                            role="button">Detail</a>
+
+                        <a class="btn btn-warning" href="{{ route('department.edit', $department) }}"
                             role="button">Edit</a>
 
 
