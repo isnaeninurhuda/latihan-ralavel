@@ -12,7 +12,7 @@
     <a class="btn btn-primary mb-3" href="{{ route('department.create') }}" role="button">Create Department</a>
 
 
-    <table class="table  table-bordered border-dark table-hover">
+    <table id="example" class="table table-bordered border-dark table-hover">
         <thead>
             <tr>
                 <th scope="col">#</th>

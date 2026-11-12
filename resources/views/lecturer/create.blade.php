@@ -4,7 +4,7 @@
 
 
 
-    <form method="POST" action="{{ route('lecturer.store') }}">
+    <form method="POST" action="{{ route('lecturer.store') }}" enctype="mu">
         @csrf
 
 
@@ -16,6 +16,7 @@
                 <div class="invalid-feedback">{{ $message }}</div>
             @enderror
         </div>
+       ccc
 
         <div class="mb-3">
             <label for="nim" class="form-label">Department</label>
